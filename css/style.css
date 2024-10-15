@@ -9,14 +9,14 @@
     --secondarycolor:#FF9022
 }
 
+/* Styling af navigationsbar */
 body {
     font-family: Noto Sans,sans-serif;
     text-decoration: none;
-    background-color: azure;
 }
 
 header {
-    position: fixed;
+    position:fixed;
     top:0;
     left:0;
     right:0;
@@ -62,7 +62,7 @@ header .navbar ul li ul {
     position: absolute;
     left: 0;
     width: 200px;
-    display: none;
+    display:none;
 }
 
 header .navbar ul li ul li {
@@ -82,7 +82,7 @@ header .navbar ul li:hover > ul {
 }
 
 #menu-bar {
-    display: none;
+    display:none;
 }
 
 header label {
@@ -138,7 +138,6 @@ header label {
 }
 
 
-
 .logo-img{
     display: flex;
     width:10%;
@@ -146,6 +145,8 @@ header label {
     padding-right: 5px;
 }
 
+
+/* Styling af Nyhedsafsnit */
 .forside-logo{
     display: flex;
     align-items: center;
@@ -160,4 +161,76 @@ h1{
 
 span{
     color: var(--secondarycolor);
+}
+
+
+
+main{
+    padding-top: 8rem;
+    
+}
+
+
+h2{
+    font-family: EB Garamond,sans-serif;
+    color: var(--secondarycolor);
+
+}
+
+
+
+.content {
+    text-align: center; /* Centers the content within this container */
+    margin: 20px; /* Optional: Adds some space from the left */
+    float: left;
+}
+
+.content h2 {
+    margin-bottom: 10px; /* Adds space between the <h2> and the .nyheder-tekst */
+}
+
+.content-nyheder-mode{
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: center; 
+}
+
+.nyheder-tekst {
+    background-color: var(--primarycolor);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    height: auto;
+    font-size: 0.8rem;
+    margin-right: 20px;
+}
+
+.nyheder-tekst p{
+    padding: 10px;
+}
+
+.forside-content {
+    display: flex; /* Arrange items in a row */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    margin: 20px; /* Adds some space around the content */
+}
+
+.forside-img {
+    margin-right: 20px;
+}
+
+.forside-img img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.mode-tekst {
+    background-color: var(--primarycolor); 
+    color: white;
+    padding: 15px;
+    width: 200px;
+    height: auto;
+    text-align: center;
 }
