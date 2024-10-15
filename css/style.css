@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primarycolor:#30448D;
+    --secondarycolor:#FF9022
+}
+
+body {
+    font-family: Noto Sans,sans-serif;
+    text-decoration: none;
+    background-color: azure;
+}
+
+header {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background:var(--primarycolor);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    padding: 10px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+
+header .logo {
+    font-weight: bolder;
+    font-size: 1rem;
+    color: #333;
+}
+
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 18px;
+    color: white;
+    display: block;
+}
+
+header .navbar ul li a:hover {
+    background:var(--secondarycolor);
+    color: white;
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    background-color: var(--secondarycolor);
+}
+
+header .navbar ul li ul li ul {
+    left: 200px;
+    top:0;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+    display: block;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color:white;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:991px){
+
+
+    header {
+        padding: 20px;
+    }
+    
+    header label {
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left:0;
+        right:0;
+        background:var(--primarycolor);
+        border-top: 1px solid rgba(0,0,0,0.1);
+        display: none;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        background: var(--primarycolor);
+    }
+
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left:0;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: block;
+    }
+
+}
+
+
+
+.logo-img{
+    display: flex;
+    width:10%;
+    height: auto;
+    padding-right: 5px;
+}
+
+.forside-logo{
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    font-family:Noto Sans, sans-serif;
+    font-size: 2rem;
+    padding-left: 5px;
+    color: white;
+}
+
+span{
+    color: var(--secondarycolor);
+}
