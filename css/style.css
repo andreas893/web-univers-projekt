@@ -179,20 +179,14 @@ h2{
 
 
 
-.content {
+.nyhed-afsnit {
     text-align: center; /* Centers the content within this container */
     margin: 20px; /* Optional: Adds some space from the left */
     float: left;
 }
 
-.content h2 {
+.nyhed-afsnit h2 {
     margin-bottom: 10px; /* Adds space between the <h2> and the .nyheder-tekst */
-}
-
-.content-nyheder-mode{
-    display: flex; 
-    align-items: flex-start; 
-    justify-content: center; 
 }
 
 .nyheder-tekst {
@@ -201,36 +195,44 @@ h2{
     padding: 15px;
     text-align: center;
     width: 200px;
-    height: auto;
+    height: 240px;
     font-size: 0.8rem;
-    margin-right: 20px;
 }
 
 .nyheder-tekst p{
     padding: 10px;
 }
 
-.forside-content {
-    display: flex; /* Arrange items in a row */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-    margin: 20px; /* Adds some space around the content */
+.forside-content{
+    height: auto;
+    width: 70%;
+    max-width: 100%;
+    display: flex
 }
 
-.forside-img {
-    margin-right: 20px;
+
+
+.mode-afsnit{
+    margin: 20px;
+    float:right;
+    text-align: center;
+
 }
 
-.forside-img img {
-    max-width: 100%; 
-    height: auto; 
-}
-
-.mode-tekst {
-    background-color: var(--primarycolor); 
+.mode-tekst{
+    background-color: var(--primarycolor);
     color: white;
     padding: 15px;
-    width: 200px;
-    height: auto;
     text-align: center;
+    width: 200px;
+    height: 240px;
+    font-size: 0.8rem;
+}
+
+.mode-tekst p{
+    padding: 10px;
+}
+
+.mode-afsnit h2{
+    margin-bottom: 10px;
 }
