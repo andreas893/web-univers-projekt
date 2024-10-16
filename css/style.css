@@ -291,8 +291,8 @@ figure img{
 }
 
 .genbrug-tips{
-    margin-left: 50px;
     margin-top: 8rem;
+    background: #FFFDD0;
 }
 
 .tips-tekst{
@@ -303,16 +303,18 @@ figure img{
     flex: 1;
     max-width: 50%;
     margin-top: 2rem;
+    margin-left: 2rem;
 }
 
 .tips-tekst ul li{
-    padding: 10x;
+    padding: 10px;
     margin: 0.5rem;
 }
 
 .tips-overskrift{
     margin-top: 30px;
     padding-top: 5rem;
+    margin-left: 2rem;
 }
 
 .materiale-img img{
