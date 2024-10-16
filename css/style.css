@@ -597,3 +597,44 @@ height: 1.5px;
 .rep-artikel p a span:hover{
     text-decoration: underline;
 }
+
+/* Styling af trends.html */
+
+/* Styling af øverste afsnit trends of fashion */
+
+.ft-afsnit p{
+    line-height: 2;
+}
+.ft-afsnit{
+    display: flex;
+    margin: 4rem;
+    margin-left: 6rem;
+}
+
+.ft-artikel{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.ft-artikel h2{
+    text-align: left;
+}
+
+.ft-artikel p{
+    padding: 20px 0 20px 0;
+}
+
+.trend-img{
+    margin-left: 5rem;
+    margin-right: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.trend-img img{
+    width:150%;  
+    padding: 
+}
