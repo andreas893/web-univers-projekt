@@ -7,6 +7,7 @@
 :root{
     --primarycolor:#30448D;
     --secondarycolor:#FF9022;
+    --tetriarycolor:#FFFDD0;
     --backgroundcolor:rgb(253, 204, 114);
 }
 
@@ -56,7 +57,7 @@ header .navbar ul li a {
 
 header .navbar ul li a:hover {
     background:var(--secondarycolor);
-    color: white;
+    color: black;
 }
 
 header .navbar ul li ul {
@@ -212,6 +213,7 @@ figure{
 figure img{
     height: auto;
     width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 
@@ -292,7 +294,7 @@ figure img{
 
 .genbrug-tips{
     margin-top: 8rem;
-    background: #FFFDD0;
+    background: var(--tetriarycolor);
 }
 
 .tips-tekst{
@@ -321,6 +323,7 @@ figure img{
     max-width: 60%;
     height: auto;
     margin-left: 6.2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 .materiale-img{
@@ -473,3 +476,124 @@ height: 1.5px;
     font-size: 0.8rem
 }
 
+
+/* Styling af diy.html */
+/* Styling af tekstboks afsnit og billede til */
+
+.toj-tekst {
+    background-color: var(--primarycolor);
+    color: white;
+    padding: 20px;
+    font-size: 0.8rem;
+    width: 400px;
+    text-align: center;
+    line-height: 2;
+    margin-right: 7rem;
+}
+
+.custom-p{
+    padding: 60px 0 0 0;
+}
+.toj-tekst h2{
+    padding-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.toj-tekstboks{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 5rem;
+}
+
+.toj-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+.toj-img img{
+    width: 90%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+/* Styling af længere levetid og upcycling artiklerne */
+.artikler{
+    margin: 0 6rem 6rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--tetriarycolor);
+    border-radius: 1%;
+}
+
+.artikler article{
+    padding: 30px;
+}
+.artikler h2{
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+.artikler p{
+    line-height: 2;
+}
+.artikel-levetid{
+    margin-bottom: 5rem;
+
+}
+
+.artikel-levetid ul{
+    padding-left: 3rem;
+    padding-top: 10px;
+}
+
+.artikel-levetid ul li{
+    padding: 10px;
+}
+
+
+.artikel-upcycle p{
+    padding:12px 0 12px 0;
+}
+
+/* Styling af reparation artikel */
+.upcycling-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.upcycling-img img{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    height: auto;
+    width: 80%;
+}
+
+.rep-artikel h2{
+    padding: 0;
+    text-align: left;
+}
+
+.rep-artikel p{
+    padding: 12px 0 12px 0;
+}
+
+.rep-artikel p a{
+    text-decoration: none;
+}
+
+.rep-artikel p a span{
+    font-style: italic;
+    color: black;
+}
+
+.rep-artikel p a span:hover{
+    text-decoration: underline;
+}
