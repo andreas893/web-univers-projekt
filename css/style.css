@@ -635,6 +635,73 @@ height: 1.5px;
 }
 
 .trend-img img{
-    width:150%;  
-    padding: 
+    width:150%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);   
 }
+
+/* Styling af fast-fashion artikel */
+.fastfashion-afsnit{
+    display: flex;
+    margin: 4rem;
+    margin-left: 6rem;
+}
+
+.fastfashion-artikel{
+    display: flex;
+    flex-direction: column;
+}
+
+.fastfashion-artikel h2{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.fastfashion-artikel p{
+    text-align: left;
+    line-height: 2;
+    padding: 20px;
+}
+
+.fastfashion-artikel p span{
+    font-style: italic;
+    color: black;
+}
+
+/* Styling af Budgetvenlig og bæredygtig afsnit */
+.bb-afsnit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem;
+    margin-bottom: 8rem;
+}
+
+.bb-artikel{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.bb-artikel p{
+    line-height: 2;
+    padding: 10px 20px 10px 0;
+}
+
+.bb-artikel h2{
+    padding-bottom: 20px;
+}
+
+.bb-img{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 2rem;
+}
+
+.bb-img img{
+    width: 90%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+
