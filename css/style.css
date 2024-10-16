@@ -544,7 +544,6 @@ height: 1.5px;
 }
 .artikel-levetid{
     margin-bottom: 5rem;
-
 }
 
 .artikel-levetid ul{
@@ -556,6 +555,10 @@ height: 1.5px;
     padding: 10px;
 }
 
+.artikel-levetid p span{
+    color: black;
+    font-style: italic;
+}
 
 .artikel-upcycle p{
     padding:12px 0 12px 0;
@@ -704,4 +707,117 @@ height: 1.5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
+/* Styling af genbrug.html */
 
+/* Styling af budget tekst og img */
+.budget-afsnit{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 6rem 6rem 6rem;
+}
+
+.budget-artikel p{
+    line-height: 2;
+}
+
+.budget-artikel{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6rem;
+}
+
+.budget-artikel h2{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+
+.budget-img{
+    display: flex;
+    justify-content: center;
+}
+
+.budget-img img{
+    width: 40%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+/* Styling af find genbrugsbutikker artikel og tektsboks samt billeder */
+
+.gb-afsnit{
+    margin: 4rem 6rem 6rem 6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.gb-afsnit p,li{
+    line-height:2;
+}
+
+.gb-afsnit p{
+    padding: 10px 0 10px 0;
+}
+
+.gb-artikel h2{
+    text-align: left;
+    padding-bottom: 40px;
+}
+
+.gb-list{
+    margin-top: 3rem;
+}
+
+.gb-list h3{
+    padding-bottom: 10px;
+    font-family: EB Garamond,sans-serif;
+    color: var(--secondarycolor);
+}
+
+
+.gb-tekstboks{
+    background-color: var(--primarycolor);
+    color: white;
+    padding: 20px;
+    height: auto;
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+.gb-tekstboks ul li, .gb-tekstboks ul{
+    padding: 10px 0 10px 10px; 
+}
+
+.gb-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.gb-img img{
+    width: 40%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.tojmaerker-artikel{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+.tojmaerker-artikel h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.tojmaerker-artikel ul{
+    padding: 0 30px 0 30px;
+}
+
+.tojmaerker-artikel p span{
+    color: black;
+    font-style: italic;
+}
