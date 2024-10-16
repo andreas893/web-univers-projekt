@@ -6,7 +6,8 @@
 
 :root{
     --primarycolor:#30448D;
-    --secondarycolor:#FF9022
+    --secondarycolor:#FF9022;
+    --backgroundcolor:rgb(253, 204, 114);
 }
 
 /* Styling af navigationsbar */
@@ -222,7 +223,10 @@ figure img{
 .nyheder-tekst p a{
     text-decoration: none;
     color: white;
-    
+}
+
+.nyheder-tekst p a:hover{
+    background-color: var(--backgroundcolor);
 }
 
 .nyheder-tekst {
@@ -255,6 +259,10 @@ figure img{
 .mode-tekst ul a{
     text-decoration: none;
     color: var(--secondarycolor);
+}
+
+.mode-tekst ul a:hover{
+    background-color:var(--backgroundcolor);
 }
 
 .mode-tekst ul{
@@ -321,13 +329,13 @@ figure img{
 
 /* Styling af Sæson afsnittet */
 .saeson{
-    margin: 8rem 50px 8rem 50px;
+    margin: 8rem;
 }
 
 .tre-kasser{
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .box a{
@@ -337,11 +345,15 @@ figure img{
 .box h3{
     color: var(--secondarycolor);
 }
+
+.box h3:hover{
+    background-color: rgb(253, 204, 114)
+}
+
 .box{
     display: flex;
     justify-content: center;
     align-items: center;
-
     background-color: var(--primarycolor);
     padding: 20px;
     width: 200px;
@@ -354,11 +366,13 @@ figure img{
 }
 
 
-/* Styling af SoMe afsnit i footeren */
-
-footer{
-    margin: 4rem;
+/* Styling af footer */
+.footer-section aside{
+    flex: 1;
+    margin: 0 20px;
+    text-align: center;
 }
+    
 
 .line{
 width:35%;
@@ -368,14 +382,92 @@ background-color: var(--secondarycolor);
 height: 1.5px;
 }
 
+.footer-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 2rem;
+    margin-bottom: 2.5rem;
 
+}
+
+
+/* Styling af SoMe afsnit i footeren */
 .some-img{
-display: flex;
-justify-content: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    align-self: flex-start;
+
 }
 
-.some{
-    width: 100px;
-    height: auto;
-    margin-top: 2.5rem;
+.some-img .ig{
+    width: 65px;
+    height: 65px;
 }
+.some{
+    width: 60px;
+    height:60px;
+    margin-top: 0rem;
+}
+
+.some-img img{
+    padding: 5px;
+}
+
+
+/* Styling af form */
+.form{
+    text-align: center;
+}
+
+.form form{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.form input{
+    padding: 0.5rem;
+    border: none;
+    background-color: var(--secondarycolor);
+    margin-bottom: 10px;
+}
+
+.form ::placeholder{
+    color: white;
+    text-align: center;
+}
+
+.form button{
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    background-color: var(--primarycolor);
+    color: white;
+}
+
+.form button:hover{
+    background-color: var(--secondarycolor);
+}
+
+/* Styling af kontakt afsnit */
+.kontakt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kontakt, .form h3{
+    color: var(--secondarycolor);
+    font-family: Noto Sans, sans-serif;
+    margin-bottom: 10px;
+}
+
+.copyright{
+    margin-top: 10px;
+    font-size: 0.8rem
+}
+
