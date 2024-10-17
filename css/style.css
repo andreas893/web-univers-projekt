@@ -14,7 +14,6 @@
 /* Styling af navigationsbar */
 body {
     font-family: Noto Sans,sans-serif;
-    text-decoration: none;
 }
 
 header {
@@ -175,7 +174,6 @@ span{
 /* Styling af forside content */
 main{
     padding-top: 8rem;
-    
 }
 
 
@@ -237,7 +235,7 @@ figure img{
     padding: 15px;
     text-align: center;
     width: 200px;
-    height: 240px;
+    height: 280px;
     font-size: 0.8rem;
     
 }
@@ -253,7 +251,7 @@ figure img{
     color: white;
     padding: 15px;
     width: 200px;
-    height: 240px;
+    height: 280px;
     text-align: center;
     font-size: 0.8rem;
 }
@@ -507,9 +505,6 @@ height: 1.5px;
 }
 
 .toj-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 400px;
 }
 
